@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TEST</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+    
+    <!-- JQuery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="./send.js"></script>
+    
+</head>
+
+<body>
+
+  <div ng-app="send" ng-controller="SendController">
+    <div>
+        
+            <input type="text" ng-model="name"  size="40"
+               placeholder="full name">
+            <input type="text" ng-model="email"  size="60"
+               placeholder="email">
+       
+    </div>
+      <p>Name: {{name}}</p>
+      <p>Email: {{email}}</p>
+      
+      <button ng-click = "sendServer()">
+      Click Here
+      </button>
+     
+    
+    </div>
+    
+    
+    
+    
+<script>
+    
+</script>
+    
+</body>
